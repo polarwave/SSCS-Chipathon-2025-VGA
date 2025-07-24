@@ -33,5 +33,5 @@ tools/
 
 .cursor/
 context/
-
+old_README.md
 *.gds.backup
