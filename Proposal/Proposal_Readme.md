@@ -30,7 +30,7 @@ Together they come as follows:
 
 <img width="862" height="622" alt="Image" src="https://github.com/user-attachments/assets/c2803867-fdb3-4f42-9eda-6b879ee27260" />
 
-Here the switches are implemented using transmission gates as they provide much less Ron as comapre4d to normal pass transistor. The reason for using different circuit topologies to implement the Op-amps was due to the fact that a PMOS input pair is more immune to noise which we desire.
+Here the switches are implemented using transmission gates as they provide much less Ron as comapared to normal pass transistor. The reason for using different circuit topologies to implement the Op-amps was due to the fact that a PMOS input pair is more immune to noise which we desire.
 
 ## MOSBius Pinout
 
