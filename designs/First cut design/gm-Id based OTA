@@ -1,0 +1,27 @@
+Summary of our design method:
+
+Here we present a pmos diff pair Miller OTA with the following specifications:
+Gain: 26dB (target 30)
+Phase Margin: 60 degrees (target 60)
+GBW: 15 MHz (target 15MHz)
+Rest of the specs are the same in the final design as well
+We have used Dr. Borris Murrman's gm/Id method 
+To use this methodology we have used Dr. Kinget's gm/Id based jupyter notebook for gf180mcuD 
+Devices used are 3.3V pmos and nmos devices
+Miller Compensation is used to first ascertain that the RHP zero of the system is counter acted
+After that, we have found the gain to the gain of M1 by gm1= GBW x Cc. For CL= 10 pF Cc for sixty degrees comes out to be greater than 0.22x10=2.5pF
+Now, we ensure (gm/Id)1=(gm/Id)2 therefore (W/L)1=(W/L)2
+gm1 is known so we can use gm/Id vs Id/W curves for 3.3V pmos devices
+In the first cut design, I had taken L to be Lmin=0.28, but that seems to affect the gain by 4dB!
+(IMPORTANT STEP) So in the final design we had used the intrinsic gain of the devices to calculate the L, this method can be found in CMOS Analog Circuit Design by Alan and Holberg
+Alternatively, we can also use the VA (Early Voltage) to ascertain the length, a method proposed in "MILLER OTA DESIGN USING A DESIGN METHODOLOGY BASED ON THE GM/ID AND EARLY-VOLTAGE CHARACTERISTICS: DESIGN CONSIDERATIONS AND EXPERIMENTAL RESULTS" by Fernando B Cortes and Sergio Bampi
+It is known that gm7 of this OTA is based on the second pole = 2.2 x (gm1) x (CL/Cc). gm/Id is thus used again.
+The current mirror transistors are operated in strong inversion. Thus for that, we can look at gm/Id vs VGS graph and ascertain the values from there on. 
+5,6,8 must operate in moderate inversion. So consequently we have calculated for them. 
+
+RESOURCES:
+For the jupyter notebook: https://github.com/sscs-ose/sscs-chipathon-2025/tree/main/resources/Sizing/backup
+More on Borris Murrman's Repo : https://github.com/bmurmann/Book-on-gm-ID-design/tree/main/starter_files_open_source_tools/gf180mcuD
+' 
+Link to Slides https://ieeetoronto.ca/wp-content/uploads/2020/06/20160226toronto_sscs.pdf
+
