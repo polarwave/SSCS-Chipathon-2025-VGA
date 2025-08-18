@@ -5,7 +5,7 @@ We thoroughly went through the suggestions made by Prof. Kinget and have revised
 ## Revised Specifications
 | Metrics | Expected Value/Range|
 | --------| --------------------|
-| Gaina Range | 12 to 30 dB|
+| Gaina Range | 10 to 30 dB|
 | Bandwidth | 10 Mhz|
 |Linearity (THD)| <-50dB (~0.316%)|
 | Input referred noise | <10uV (RMS)|
