@@ -20,7 +20,7 @@ This is the circuit topology that we are thinking of implementaing. This is sign
 <<img width="574" height="421" alt="image" src="https://github.com/user-attachments/assets/dddcb030-540d-4b22-ae9e-d3b68f23fbaf" />
 >
 
-The opamp (Op) has the above circuit topology i.e a PMOS input differential pair with class AB output stage with miller compensation.
+The opamp (Op) has the above circuit topology i.e a PMOS input differential pair with class AB output stage with miller compensation. Special thanks to LowNoiseAnomaly for teaming up with us!
 
 
 
@@ -30,9 +30,11 @@ https://docs.google.com/spreadsheets/d/1j9QzC0dWImxPsfmBgngrhPP4CyDHiB-zoizPEBzx
 
 ## Timeline and Work distribution
 
-Ashutosh Chakravarty (Team Lead) Top level design, Op amp and DRC 
-Manigandan D Op amp and startup circuit
-Nishchit N Layout integration and startup circuit design
+Ashutosh Chakravarty (Team Lead) Top level design and layout, Op amp and DRC (https://github.com/polarwave)
+
+Manigandan D Op amp and startup circuit design + top level layout (https://github.com/d-maniganda)
+
+Nishchit N Layout integration and startup circuit design (https://github.com/nnish14)
 
 ## License
 
