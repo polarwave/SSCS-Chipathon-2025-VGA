@@ -5,8 +5,8 @@ We thoroughly went through the suggestions made by Prof. Kinget and have revised
 ## Revised Specifications
 | Metrics | Expected Value/Range|
 | --------| --------------------|
-| Gaina Range | 10 to 30 dB|
-| Bandwidth | 10 Mhz|
+| Gaina Range | 5 to 45 dB|
+| Bandwidth | >50 Mhz|
 |Linearity (THD)| <-50dB (~0.316%)|
 | Input referred noise | <10uV (RMS)|
 |Control method | Digital|
@@ -16,29 +16,26 @@ We thoroughly went through the suggestions made by Prof. Kinget and have revised
 
 <img width="815" height="444" alt="Image" src="https://github.com/user-attachments/assets/fe418d1b-04a5-4f21-a32c-c4067333c3bb" />
 
-This is the circuit topology that we are thinking of implementaing. This is significantly different from our previous topology and is inspired from (https://www.ee.columbia.edu/~kinget/EE6350_S22/9_EIT/circuit_design.html). This topology is quite integrated to act as PGA while still being flexibe enough to be more programmable and support different kinds of lab experiments for an undergraduate analog circuits class.
+This is the circuit topology that we are thinking of implementaing. This is significantly different from our previous topology and is inspired from (). This topology is quite integrated to act as PGA while still being flexibe enough to be more programmable and support different kinds of lab experiments for an undergraduate analog circuits class.
 
-<img width="864" height="504" alt="Image" src="https://github.com/user-attachments/assets/575d0d1f-4742-4836-92fa-1639e083d9e9" />
+<<img width="574" height="421" alt="image" src="https://github.com/user-attachments/assets/dddcb030-540d-4b22-ae9e-d3b68f23fbaf" />
+>
 
-The first opamp (Op) has the above circuit topology i.e a PMOS input differential pair with class AB output stage with RC miller compensation.
+The opamp (Op) has the above circuit topology i.e a PMOS input differential pair with class AB output stage with miller compensation.
 
 <img width="875" height="567" alt="Image" src="https://github.com/user-attachments/assets/8c160a53-8814-443b-8ddb-9e66aa18f5c6" />
 
-The second opamp (Op) has the above circuit topology i.e a NMOS input differential pair with class AB output stage with RC miller compensation.
 
-Together they come as follows:
-
-<img width="862" height="622" alt="Image" src="https://github.com/user-attachments/assets/c2803867-fdb3-4f42-9eda-6b879ee27260" />
-
-Here the switches are implemented using transmission gates as they provide much less Ron as comapared to normal pass transistor. The reason for using different circuit topologies to implement the Op-amps was due to the fact that a PMOS input pair is more immune to noise which we desire.
 
 ## MOSBius Pinout
 
-Will be updated soon..
+https://docs.google.com/spreadsheets/d/1j9QzC0dWImxPsfmBgngrhPP4CyDHiB-zoizPEBzxFEg/edit?usp=sharing
 
 ## Timeline and Work distribution
 
-Refer to (https://github.com/polarwave/SSCS-Chipathon-2025-VGA/blob/main/Proposal/Team_%20Razavus-2.pdf)
+Ashutosh Chakravarty (Team Lead) Top level design, Op amp and DRC 
+Manigandan D Op amp and startup circuit
+Nishchit N Layout integration and startup circuit design
 
 ## License
 
