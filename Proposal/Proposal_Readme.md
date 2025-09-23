@@ -15,7 +15,7 @@ We thoroughly went through the suggestions made by Prof. Kinget and have revised
 ## High-level Design
 
 
-This is the circuit topology that we are thinking of implementaing. This is significantly different from our previous topology and is inspired from (). This topology is quite integrated to act as PGA while still being flexibe enough to be more programmable and support different kinds of lab experiments for an undergraduate analog circuits class.
+This is the circuit topology that we are thinking of implementaing. This is significantly different from our previous topology and is inspired from (https://www.analog.com/media/en/training-seminars/design-handbooks/system-applications-guide/Section3.pdf). This topology is quite integrated to act as PGA while still being flexibe enough to be more programmable and support different kinds of lab experiments for an undergraduate analog circuits class.
 
 <<img width="574" height="421" alt="image" src="https://github.com/user-attachments/assets/dddcb030-540d-4b22-ae9e-d3b68f23fbaf" />
 >
