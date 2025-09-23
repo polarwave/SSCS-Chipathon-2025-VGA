@@ -14,7 +14,6 @@ We thoroughly went through the suggestions made by Prof. Kinget and have revised
 
 ## High-level Design
 
-<img width="815" height="444" alt="Image" src="https://github.com/user-attachments/assets/fe418d1b-04a5-4f21-a32c-c4067333c3bb" />
 
 This is the circuit topology that we are thinking of implementaing. This is significantly different from our previous topology and is inspired from (). This topology is quite integrated to act as PGA while still being flexibe enough to be more programmable and support different kinds of lab experiments for an undergraduate analog circuits class.
 
@@ -22,8 +21,6 @@ This is the circuit topology that we are thinking of implementaing. This is sign
 >
 
 The opamp (Op) has the above circuit topology i.e a PMOS input differential pair with class AB output stage with miller compensation.
-
-<img width="875" height="567" alt="Image" src="https://github.com/user-attachments/assets/8c160a53-8814-443b-8ddb-9e66aa18f5c6" />
 
 
 
